@@ -47,24 +47,42 @@ console.log(result);
 //Q4
 
 
-var balance = -325; 
-var checkBalance = true; 
-var isActive = true; 
+// var balance = -325; 
+// var checkBalance = true; 
+// var isActive = true; 
 
-if (checkBalance) {
-    if (isActive) {
-        if (balance > 0) {
-            console.log("Your balance is $" + balance + ".");
-        } else if (balance === 0) {
-            console.log("Your balance is $0.00.");
-        } else {
-            console.log("Your balance is false. To solve this proplem contact us.");
-        }
-    } else {
-        console.log("Your account is not active . please contact us.");
+// if (checkBalance) {
+//     if (isActive) {
+//         if (balance > 0) {
+//             console.log("Your balance is $" + balance + ".");
+//         } else if (balance === 0) {
+//             console.log("Your balance is $0.00.");
+//         } else {
+//             console.log("Your balance is false. To solve this proplem contact us.");
+//         }
+//     } else {
+//         console.log("Your account is not active . please contact us.");
+//     }
+// }
+var balance = -325;
+var checkBalance = true;
+var isActive = true;
+
+if( checkBalance === true){
+if( isActive == true ){
+    if(balance >= 0){
+
+        console.log(`Your balance is:  ${balance}`)
+    }else{
+        console.log(`Your balance is: ${balance}`)
     }
+} else{
+    console.log("Your balance is false. To solve this proplem contact us.")
 }
+}else{
+    console.log("Your account is not active . please contact us.")
 
+}
 
 
 
@@ -78,3 +96,28 @@ if ((flavor === "vanilla" || flavor === "chocolate") &&(vessel === "cone" || ves
     console.log(`I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`);
 }
 
+
+
+// التحدي الاول 
+
+// function reverseString(str) {
+//     if (str.length < 3) {  
+//     } else {
+//         const reversedStr = str.split('').reverse().join('');
+//         console.log(reversedStr);
+//     }
+// }
+// reverseString("لنص قصير جدًا");  
+ 
+
+// // 2
+
+// function checkWordInString(text, word) {
+//     const regex = new RegExp(`\\b${word}\\b`);
+//     if (regex.test(text)) {
+//         console.log("الكلمة موجودة");
+//     } else {
+//         console.log("الكلمة غير موجودة");
+//     }
+// }
+// checkWordInString(" الكلمه موجودة");  // سيطبع: "الكلمة موجودة"
